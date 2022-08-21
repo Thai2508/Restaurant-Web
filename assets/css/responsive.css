@@ -1,0 +1,85 @@
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .center-nav-list li {
+        margin-left: 1em;
+    }
+
+    .info-block {
+        margin-bottom: 7em;
+    }
+
+    .text-content {
+        width: 70%;
+    }
+
+    .box-sale {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .box-sale-img {
+        margin-right: 0;
+    }
+
+    .customer img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .content-about {
+        margin-top: 0;
+    }
+    .about-img {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .content-booking {
+        margin: 1em 0;
+    }
+
+    .img-customer {
+        display: none;
+    }
+    
+    .box-text {
+        margin: 0.5em 0;
+    }
+
+}
+
+/* < Tablet */
+@media (max-width: 739px){
+    .text-content {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .info-block {
+        margin-bottom: 5em;
+    }
+
+    .f-left li:nth-child(1),
+    .f-center li:nth-child(1),
+    .f-right li:nth-child(1) {
+        margin-bottom: 1em;
+    }
+}
+
+/* PC high resolution */
+@media (min-width: 1600px) {
+    body {
+        margin: 0 auto;
+        max-width: 1920px;
+    }
+    .container {      
+        background-color: lightgray;
+    }
+
+    .header-bg {
+        background-position: center;
+    }
+}
