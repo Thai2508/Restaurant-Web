@@ -18,7 +18,7 @@
     <div class="container">
 
         <!-- Header -->
-        <div class="header">
+        <div class="header" data-index="-1">
             <div class="header-bg">
                 <div class="grid wide">
 
@@ -46,7 +46,7 @@
 
                     <!--  Some info restaurant  -->
                     <div class="information">
-                        <div class="content-info info-block">
+                        <div class="content-info ">
                             <div class="name-restaurant">
                                 <h1>Fast Food Restaurant</h1>
                             </div>
@@ -90,9 +90,9 @@
                         </div>                      
                     </div>
                     <div class="node">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+                        <div class="circle dot--color"></div>
+                        <div class="circle "></div>
+                        <div class="circle "></div>
                     </div>
 
                 </div>
@@ -151,68 +151,14 @@
                 </div>
                 <div class="menu-items">
                     <ul>
-                        <li>All</li>
-                        <li>Burger</li>
-                        <li>Pizza</li>
-                        <li>Pasta</li>
-                        <li>Fries</li>
+                        <li class="name-item item--active">All</li>
+                        <li class="name-item">Burger</li>
+                        <li class="name-item">Pizza</li>
+                        <li class="name-item">Pasta</li>
+                        <li class="name-item">Fries</li>
                     </ul>
                 </div>       
-                <div class="row">
-                    
-                    <div class=" col l-4 m-6 c-12">
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="./assets/imgs/item-pizza-1.png" alt="Pizza">
-                            </div>
-                            <div class="item-content">
-                                <strong>Delicious Pizza</strong>
-                                <p> Veniam debitis quaerat officiis quasi cupiditate quo, 
-                                    quisquam velit,magnam voluptatem repellendus sed eaque
-                                </p>
-                                <div class="oder">
-                                    <p>$20</p>
-                                    <span><ion-icon name="cart" ></ion-icon></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col l-4 m-6 c-12">
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="./assets/imgs/item-pizza-1.png" alt="Pizza">
-                            </div>
-                            <div class="item-content">
-                                <strong>Delicious Pizza</strong>
-                                <p> Veniam debitis quaerat officiis quasi cupiditate quo, 
-                                    quisquam velit,magnam voluptatem repellendus sed eaque
-                                </p>
-                                <div class="oder">
-                                    <p>$20</p>
-                                    <span><ion-icon name="cart" ></ion-icon></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col l-4 m-6 c-12">
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="./assets/imgs/item-pizza-1.png" alt="Pizza">
-                            </div>
-                            <div class="item-content">
-                                <strong>Delicious Pizza</strong>
-                                <p> Veniam debitis quaerat officiis quasi cupiditate quo, 
-                                    quisquam velit,magnam voluptatem repellendus sed eaque
-                                </p>
-                                <div class="oder">
-                                    <p>$20</p>
-                                    <span><ion-icon name="cart" ></ion-icon></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row foods">
 
                 </div>
                 <div class="btn-oder" style="margin-top: 1em; text-align: center;">
@@ -296,7 +242,7 @@
                 <div class="rate-title">
                     <h1>What Says Our Customers</h1>
                 </div>
-                <div class="row">
+                <div class="row row--nowrap">
                     <div class="col l-6 m-12 c-12 box-text">
                             <div class="content-box">
                                 <p>
@@ -304,8 +250,8 @@
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam
                                 </p>
-                                <h3>Mike Hamell</h3>
-                                <p>date</p>
+                                <h3>Thanh Hằng</h3>
+                                <p>25-08-2002</p>
                             </div>
                             <div class="img-customer">
                                 <div class="customer">
@@ -320,21 +266,53 @@
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam
                                 </p>
-                                <h3>Mike Hamell</h3>
-                                <p>date</p>
+                                <h3>Bảo Trân</h3>
+                                <p>25-08-2002</p>
                             </div>
                             <div class="img-customer">
                                 <div class="customer">
-                                    <img src="./assets/imgs/customer-1.jpg" alt="Customer">
+                                    <img src="./assets/imgs/customer-2.jpg" alt="Customer">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12 box-text">
+                        <div class="content-box">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam
+                            </p>
+                            <h3>Thảo My</h3>
+                            <p>25-08-2002</p>
+                        </div>
+                        <div class="img-customer">
+                            <div class="customer">
+                                <img src="./assets/imgs/customer-3.jpeg" alt="Customer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12 box-text">
+                            <div class="content-box">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam
+                                </p>
+                                <h3>Ngọc Trâm</h3>
+                                <p>25-08-2002</p>
+                            </div>
+                            <div class="img-customer">
+                                <div class="customer">
+                                    <img src="./assets/imgs/customer-4.jpg" alt="Customer">
                                 </div>
                             </div>
                     </div>
                 </div>           
                 <div class="arrow">
-                    <span class="arrow-bg">
+                    <span class="arrow-bg prev-arrow">
                         <ion-icon name="chevron-back-outline"></ion-icon>
                     </span>
-                    <span class="arrow-bg">
+                    <span class="arrow-bg next-arrow">
                         <ion-icon name="chevron-forward-outline"></ion-icon>
                     </span>
                 </div>

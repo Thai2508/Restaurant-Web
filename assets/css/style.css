@@ -31,10 +31,6 @@ h1, h2{
     font-family: 'Dancing Script', cursive;
 } 
 
-.nav-active {
-    color: var(--btn-color-hover);
-}
-
 .sale, .menu,
 .about,.booktable,
 .rates,.footer {
@@ -54,6 +50,9 @@ h1, h2{
     padding-top: 2em;
     height: 5em;
     align-items: center;
+}
+.nav-active {
+    color: var(--btn-color-hover);
 }
 
 .left-nav a{
@@ -121,17 +120,13 @@ h1, h2{
 
 .content-info {
     flex: 1 0 100%;
-    /* transform: translateX(-100%); */
-    /* margin-right: -100%; */
-    /* position: absolute; */
-    /* left: 10px; */
     transition: transform 0.6s ease-in-out;
-    /* margin-bottom: 10em; */
+    margin-bottom: 10em;
 }
 
-/* .info-block {
+.info-block {
     transform: translateX(0);
-} */
+}
 
 .name-restaurant h1 {
     font-size: 3.5em;
@@ -166,7 +161,6 @@ h1, h2{
 }
 
 .node {
-    
     margin-left: 0.5em;
 }
 
@@ -178,6 +172,10 @@ h1, h2{
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
+}
+
+.dot--color {
+    background-color: var(--btn-color);
 }
 
 /* Sale off */
@@ -251,11 +249,26 @@ button>ion-icon {
 
 .menu-items li {
     color: var(--box-color);
-    margin-left: 2em;
     font-size: 1.2em;
     font-weight: 500;
     display: inline-block;
     cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 20px;
+    width: 5em;
+    /* background-color: wheat; */
+}
+
+.menu-items li:nth-child(1) {
+    width: 4.2em;
+}
+
+.menu-items li:nth-child(2) {
+    width: 6em;
+}
+
+.item--active {
+    background-color: wheat;
 }
 
 .item {
@@ -276,10 +289,11 @@ button>ion-icon {
     width: 40%;
     margin: 2em 0;
     transition: 0.2s;
+    height: 150px;
 }
 
 .item-content {
-    margin: 1.5em 1em;
+    margin: 1.5em;
     background-color: var(--box-color);
 }
 
@@ -305,11 +319,13 @@ button>ion-icon {
     background-color: var(--btn-color);
     border-radius: 50%;
     cursor: pointer;
+    width: 45px;
+    height: 45px;
 }
 
 .oder span ion-icon {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     padding: 10px;
 }
 
@@ -364,7 +380,7 @@ button>ion-icon {
 }
 
 .table img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 12px;
 }
 
@@ -381,6 +397,15 @@ button>ion-icon {
     color: var(--box-color);
     text-align: center;
     font-size: 3em;
+}
+
+.row--nowrap {
+    flex-wrap: nowrap !important;
+    overflow: hidden;
+}
+
+.box-text {
+    transition: transform 0.6s ease-in-out;
 }
 
 .content-box {
@@ -428,6 +453,8 @@ button>ion-icon {
     margin: 0 0.5em;
     border-radius: 100%;
     cursor: pointer;
+    width: 41px;
+    height: 41px;
 }
 
 .arrow-bg ion-icon {
