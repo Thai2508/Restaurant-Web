@@ -66,8 +66,8 @@ const app = {
         else app.numArrow++;
 
         if (app.numArrow < 0)
-            app.numArrow = box.length - 2;
-        if (app.numArrow >= box.length-1)
+            app.numArrow = box.length - 1;
+        if (app.numArrow >= box.length)
             app.numArrow = 0;
 
         box.forEach(m => {
